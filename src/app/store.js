@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import userReducer from '../features/user/userSlice';
+import chatReducer from '../features/chat/chatSlice';
 
-export const store = configureStore({
+export default configureStore({
   reducer: {
-    counter: counterReducer,
+    user: userReducer,
+    chat: chatReducer,
   },
 });
